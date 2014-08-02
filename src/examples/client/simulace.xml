@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<net>
+  <Transition x="323" y="256">
+    <text>e!=f|w=5</text>
+  </Transition>
+  <Transition x="349" y="92">
+    <text>a&gt;b &amp; c&gt;10 | s=14+b</text>
+  </Transition>
+  <Place x="633" y="241">
+    <text>1,4,7</text>
+  </Place>
+  <Place x="635" y="351">
+    <text>4,8,6</text>
+  </Place>
+  <Place x="104" y="197">
+    <text>12</text>
+  </Place>
+  <Place x="562" y="49">
+    <text>1,2,24</text>
+  </Place>
+  <Place x="633" y="94">
+    <text>4,6,9</text>
+  </Place>
+  <Place x="566" y="140">
+    <text>19</text>
+  </Place>
+  <Place x="569" y="287">
+    <text>8,5,3</text>
+  </Place>
+  <Arc>
+    <start x="562" y="49"/>
+    <target x="349" y="92"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="349" y="92"/>
+    <target x="104" y="197"/>
+    <text>s</text>
+  </Arc>
+  <Arc>
+    <start x="633" y="94"/>
+    <target x="349" y="92"/>
+    <text>b</text>
+  </Arc>
+  <Arc>
+    <start x="566" y="140"/>
+    <target x="349" y="92"/>
+    <text>c</text>
+  </Arc>
+  <Arc>
+    <start x="633" y="241"/>
+    <target x="323" y="256"/>
+    <text>x</text>
+  </Arc>
+  <Arc>
+    <start x="569" y="287"/>
+    <target x="323" y="256"/>
+    <text>e</text>
+  </Arc>
+  <Arc>
+    <start x="635" y="351"/>
+    <target x="323" y="256"/>
+    <text>f</text>
+  </Arc>
+  <Arc>
+    <start x="323" y="256"/>
+    <target x="104" y="197"/>
+    <text>w</text>
+  </Arc>
+</net>

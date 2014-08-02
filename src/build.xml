@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="IJA 11/12 gr130" default="compile" basedir=".">
+   <description>
+      IJA 11/12 gr130 - ant skript pro preklad aplikace.
+      Vytvorili:
+      Jakub Kvita        xkvita01@stud.fit.vutbr.cz   kvitajakub@gmail.com
+      Ondrej Cienciala   xcienc02@stud.fit.vutbr.cz   ondra.cienciala@centrum.cz
+      6.4.2012
+   </description>
+   
+   <!-- cesta do adresare lib -->
+   <path id="lib.path">
+      <fileset dir="lib">
+         <include name="*.*"/>
+      </fileset>
+   </path>
+   
+   <path id="project.classpath">    
+    <path refid="lib.path"/>
+    <pathelement path="${java.class.path}"/>
+    <pathelement path="${additional.path}"/>
+   </path>
+   
+   <property name="src"    location="src"/>
+   <property name="build"  location="build"/>
+   <property name="doc"    location="doc"/>
+   <property name="lib"    location="lib"/>
+   <property name="clDest" location="dest-client"/>
+   <property name="client" value="ija2012-client.jar"/>
+   <property name="clMain" value="client.MainGui"/>
+   <property name="seDest" location="dest-server"/>
+   <property name="server" value="ija2012-server.jar"/>
+   <property name="seMain" value="server.MainListen"/>
+   <property name="encod"  value="UTF-8"/>
+   
+   <target name="clean">
+      <delete dir="${build}"/>
+      <delete dir="${clDest}"/>
+      <delete dir="${seDest}"/>
+      <delete dir="${doc}"/>
+   </target>
+   
+   <target name="init" depends="clean">
+      <mkdir dir="${build}"/>
+      <mkdir dir="${doc}"/>
+      <mkdir dir="${clDest}"/>
+      <mkdir dir="${seDest}"/>
+   </target>
+   
+   <target name="compile" depends="init">
+      <!-- Kompilace -->
+      <javac srcdir="${src}"
+             destdir="${build}"
+             encoding="${encod}">
+      <classpath refid="project.classpath"/>
+      </javac>
+      <!-- Dokumentace -->
+      <javadoc sourcepath="${src}"
+               destdir="${doc}">
+         <classpath refid="project.classpath"/>
+      </javadoc>
+      <!-- Jar -->  
+      <manifestclasspath property="client.path" jarfile="${clDest}/${client}">
+        <classpath refid="lib.path" />
+      </manifestclasspath>
+      <manifestclasspath property="server.path" jarfile="${seDest}/${server}">
+        <classpath refid="lib.path" />
+      </manifestclasspath>
+      
+      <jar destfile="${clDest}/${client}"
+           basedir="${build}">
+         <manifest>
+            <attribute name="Main-Class" value="${clMain}"/>
+            <attribute name="Class-Path" value="${client.path}"/>    
+         </manifest>
+      </jar>
+      <jar destfile="${seDest}/${server}"
+           basedir="${build}">
+         <manifest>
+            <attribute name="Main-Class" value="${seMain}"/> 
+            <attribute name="Class-Path" value="${server.path}"/> 
+         </manifest>
+      </jar>
+   </target>
+   
+   <target name="client">
+      <java jar="${clDest}/${client}"
+            dir="${clDest}"
+            fork="true"/>
+   </target>
+
+   <target name="server">
+      <java jar="${seDest}/${server}"
+            dir="${seDest}"
+            fork="true"/>
+   </target>
+   
+   <target name="debugser" depends="init">
+   
+      <javac srcdir="${src}"
+             destdir="${build}"
+             encoding="${encod}">
+      <classpath refid="project.classpath"/>
+      </javac>
+      <manifestclasspath property="server.path" jarfile="${seDest}/${server}">
+        <classpath refid="lib.path" />
+      </manifestclasspath>
+            <jar destfile="${seDest}/${server}"
+           basedir="${build}">
+         <manifest>
+            <attribute name="Main-Class" value="${seMain}"/> 
+            <attribute name="Class-Path" value="${server.path}"/> 
+         </manifest>
+      </jar>
+      <java jar="${seDest}/${server}"
+            dir="${seDest}"
+            fork="true"/>
+   </target>
+</project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<net>
+  <Transition x="426" y="136">
+    <text/>
+  </Transition>
+  <Place x="246" y="290">
+    <text/>
+  </Place>
+  <Place x="622" y="280">
+    <text>1,2</text>
+  </Place>
+  <Arc>
+    <start x="622" y="280"/>
+    <target x="426" y="136"/>
+    <text/>
+  </Arc>
+  <Arc>
+    <start x="426" y="136"/>
+    <target x="246" y="290"/>
+    <text>b</text>
+  </Arc>
+</net>

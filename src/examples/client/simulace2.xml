@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<net>
+  <Place x="437" y="205">
+    <text></text>
+  </Place>
+  <Transition x="251" y="199">
+    <text></text>
+  </Transition>
+  <Transition x="257" y="334">
+    <text>e!=f &amp; x!=d | w=d</text>
+  </Transition>
+  <Transition x="183" y="72">
+    <text>a&gt;b &amp; c&gt;10 | s=d+b</text>
+  </Transition>
+  <Place x="584" y="297">
+    <text>1,4,7</text>
+  </Place>
+  <Place x="556" y="401">
+    <text>4,8,6</text>
+  </Place>
+  <Place x="98" y="208">
+    <text>12</text>
+  </Place>
+  <Place x="562" y="49">
+    <text>1,2,24</text>
+  </Place>
+  <Place x="633" y="94">
+    <text>4,6,9</text>
+  </Place>
+  <Place x="566" y="140">
+    <text>19</text>
+  </Place>
+  <Place x="666" y="350">
+    <text>8,5,3</text>
+  </Place>
+  <Arc>
+    <start x="562" y="49"/>
+    <target x="183" y="72"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="183" y="72"/>
+    <target x="98" y="208"/>
+    <text>s</text>
+  </Arc>
+  <Arc>
+    <start x="633" y="94"/>
+    <target x="183" y="72"/>
+    <text>b</text>
+  </Arc>
+  <Arc>
+    <start x="566" y="140"/>
+    <target x="183" y="72"/>
+    <text>c</text>
+  </Arc>
+  <Arc>
+    <start x="584" y="297"/>
+    <target x="257" y="334"/>
+    <text>x</text>
+  </Arc>
+  <Arc>
+    <start x="666" y="350"/>
+    <target x="257" y="334"/>
+    <text>e</text>
+  </Arc>
+  <Arc>
+    <start x="556" y="401"/>
+    <target x="257" y="334"/>
+    <text>f</text>
+  </Arc>
+  <Arc>
+    <start x="257" y="334"/>
+    <target x="98" y="208"/>
+    <text>w</text>
+  </Arc>
+  <Arc>
+    <start x="98" y="208"/>
+    <target x="251" y="199"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="251" y="199"/>
+    <target x="437" y="205"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="437" y="205"/>
+    <target x="183" y="72"/>
+    <text>d</text>
+  </Arc>
+  <Arc>
+    <start x="437" y="205"/>
+    <target x="257" y="334"/>
+    <text>d</text>
+  </Arc>
+</net>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<net>
+  <Place x="537" y="486">
+    <text>1,2</text>
+  </Place>
+  <Place x="484" y="407">
+    <text>7</text>
+  </Place>
+  <Place x="457" y="319">
+    <text>45</text>
+  </Place>
+  <Place x="159" y="348">
+    <text/>
+  </Place>
+  <Transition x="492" y="91">
+    <text>| b=c a=c/4</text>
+  </Transition>
+  <Place x="640" y="145">
+    <text>56,45</text>
+  </Place>
+  <Transition x="671" y="305">
+    <text>a&gt;b</text>
+  </Transition>
+  <Transition x="292" y="437">
+    <text/>
+  </Transition>
+  <Transition x="159" y="202">
+    <text>d&lt;f | t=d+1</text>
+  </Transition>
+  <Place x="304" y="270">
+    <text/>
+  </Place>
+  <Place x="305" y="129">
+    <text>12,67,8</text>
+  </Place>
+  <Place x="245" y="66">
+    <text>9,8,7,6,5,4,3,2</text>
+  </Place>
+  <Arc>
+    <start x="640" y="145"/>
+    <target x="492" y="91"/>
+    <text>c</text>
+  </Arc>
+  <Arc>
+    <start x="492" y="91"/>
+    <target x="245" y="66"/>
+    <text>b</text>
+  </Arc>
+  <Arc>
+    <start x="492" y="91"/>
+    <target x="305" y="129"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="492" y="91"/>
+    <target x="304" y="270"/>
+    <text>1234</text>
+  </Arc>
+  <Arc>
+    <start x="671" y="305"/>
+    <target x="640" y="145"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="245" y="66"/>
+    <target x="159" y="202"/>
+    <text>d</text>
+  </Arc>
+  <Arc>
+    <start x="305" y="129"/>
+    <target x="159" y="202"/>
+    <text>f</text>
+  </Arc>
+  <Arc>
+    <start x="304" y="270"/>
+    <target x="292" y="437"/>
+    <text>x</text>
+  </Arc>
+  <Arc>
+    <start x="159" y="202"/>
+    <target x="159" y="348"/>
+    <text>t</text>
+  </Arc>
+  <Arc>
+    <start x="159" y="348"/>
+    <target x="292" y="437"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="292" y="437"/>
+    <target x="457" y="319"/>
+    <text>s</text>
+  </Arc>
+  <Arc>
+    <start x="292" y="437"/>
+    <target x="484" y="407"/>
+    <text>f</text>
+  </Arc>
+  <Arc>
+    <start x="292" y="437"/>
+    <target x="537" y="486"/>
+    <text>r</text>
+  </Arc>
+  <Arc>
+    <start x="537" y="486"/>
+    <target x="671" y="305"/>
+    <text>1</text>
+  </Arc>
+  <Arc>
+    <start x="484" y="407"/>
+    <target x="671" y="305"/>
+    <text>b</text>
+  </Arc>
+  <Arc>
+    <start x="457" y="319"/>
+    <target x="671" y="305"/>
+    <text>a</text>
+  </Arc>
+</net>

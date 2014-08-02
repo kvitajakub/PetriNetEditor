@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<net>
+  <Transition x="272" y="120">
+    <text>b&gt;0 | a = b</text>
+  </Transition>
+  <Transition x="590" y="389">
+    <text>b &gt;10 | a=b</text>
+  </Transition>
+  <Place x="255" y="385">
+    <text/>
+  </Place>
+  <Place x="602" y="122">
+    <text/>
+  </Place>
+  <Arc>
+    <start x="602" y="122"/>
+    <target x="272" y="120"/>
+    <text>b</text>
+  </Arc>
+  <Arc>
+    <start x="272" y="120"/>
+    <target x="255" y="385"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="255" y="385"/>
+    <target x="590" y="389"/>
+    <text>b</text>
+  </Arc>
+  <Arc>
+    <start x="590" y="389"/>
+    <target x="602" y="122"/>
+    <text>a</text>
+  </Arc>
+</net>

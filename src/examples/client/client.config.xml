@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+  <serverName>localhost</serverName>
+  <port>22222</port>
+  <username>aaa</username>
+  <pass>111</pass>
+  <openFiles>
+    <file>D:\Dropbox\Projekty\IMS\PN - projekt.xml</file>
+  </openFiles>
+</configuration>

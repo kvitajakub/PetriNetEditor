@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+  <sizeOfCircle>75</sizeOfCircle>
+  <sizeOfRectX>25</sizeOfRectX>
+  <sizeOfRectY>50</sizeOfRectY>
+  <arrowSize>10</arrowSize>
+  <colorAct>-1688346</colorAct>
+  <colorRest>-12129466</colorRest>
+  <colorBack>-1310741</colorBack>
+  <font>Arial</font>
+  <sizeOfText>15</sizeOfText>
+  <appType>Green</appType>
+</configuration>

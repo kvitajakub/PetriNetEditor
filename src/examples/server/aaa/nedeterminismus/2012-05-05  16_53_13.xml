@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<net>
+  <Place x="611" y="477">
+    <text/>
+  </Place>
+  <Transition x="391" y="449">
+    <text/>
+  </Transition>
+  <Place x="621" y="140">
+    <text>1,2,3</text>
+  </Place>
+  <Place x="234" y="354">
+    <text>4,5,6</text>
+  </Place>
+  <Transition x="574" y="334">
+    <text/>
+  </Transition>
+  <Transition x="292" y="167">
+    <text/>
+  </Transition>
+  <Arc>
+    <start x="621" y="140"/>
+    <target x="292" y="167"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="292" y="167"/>
+    <target x="234" y="354"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="234" y="354"/>
+    <target x="574" y="334"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="574" y="334"/>
+    <target x="621" y="140"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="234" y="354"/>
+    <target x="391" y="449"/>
+    <text>a</text>
+  </Arc>
+  <Arc>
+    <start x="391" y="449"/>
+    <target x="611" y="477"/>
+    <text>a</text>
+  </Arc>
+</net>

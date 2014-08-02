@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<users>
+  <user login="SIMULATED" pass=""/>
+  <user login="aaa" pass="111"/>
+  <user login="bbb" pass="111"/>
+</users>
